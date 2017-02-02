@@ -238,6 +238,154 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://billmoling.github.io/2017/02/02/Set-up-the-Liferay-environment/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="William Mo">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="William's Tech Page">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="William's Tech Page" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/02/02/Set-up-the-Liferay-environment/" itemprop="url">
+                  Set up the Liferay environment
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-02T21:09:11+08:00">
+                2017-02-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech-General/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech(General)</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Set-up-the-Liferay-environment"><a href="#Set-up-the-Liferay-environment" class="headerlink" title="Set up the Liferay environment"></a>Set up the Liferay environment</h1><p>This document intends to describe the process to setup the Liferay CE development environment.</p>
+<p>The first step is to follow the guide in this URL.<br><a href="https://dev.liferay.com/develop/tutorials/-/knowledge_base/6-2/developing-apps-with-liferay-ide" target="_blank" rel="external">Developing Applications with Liferay IDE - Liferay 6.2 - Liferay Developer Network</a></p>
+<p>One issue is based on the document, it based on 6.2 GA4,but currently, there is no GA4 bundle could be found to download. So just download GA5 to have a try.<br><a href="https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.4%20GA5/liferay-portal-tomcat-6.2-ce-ga5-20151119152357409.zip/download" target="_blank" rel="external">https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.2.4%20GA5/liferay-portal-tomcat-6.2-ce-ga5-20151119152357409.zip/download</a></p>
+<p>In the Eclipse, window-&gt; Preference-&gt; Liferay, there is no “Install Plugin SDK”. There is a same question on StackOverflow.<br><a href="http://stackoverflow.com/questions/36600628/why-does-the-installed-plugin-sdks-not-show-up-under-liferay-in-the-liferay-ide" target="_blank" rel="external">eclipse - Why does the Installed Plugin SDKs not show up Under Liferay in the Liferay IDE Windows Preferences - Stack Overflow</a></p>
+<p><a href="https://web.liferay.com/community/forums/-/message_boards/message/72090414" target="_blank" rel="external">there is no ‘installed Plugin SDKs’ after uncompress the IDE - Community Forums | Liferay</a></p>
+<p>Then Start to write the first Liferay application<br><a href="https://dev.liferay.com/develop/tutorials/-/knowledge_base/6-2/writing-your-first-liferay-application" target="_blank" rel="external">Writing Your First Liferay Application - Liferay 6.2 - Liferay Developer Network</a></p>
+<p>When create the Liferay plugin project, it needs to set the plugin SDK folder. need to follow this URL<br><a href="https://dev.liferay.com/develop/tutorials/-/knowledge_base/6-2/setting-up-the-plugins-sdk" target="_blank" rel="external">Setting Up the Plugins SDK - Liferay 6.2 - Liferay Developer Network</a></p>
+<p>Especially, not only to modify the app.server.parent.dir folder, but also to check tomcat.dir. The properties file default point to folder “tomcat-7.0.42” or may be other version. but the real folder may be not this.</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://billmoling.github.io/2017/02/02/Use-Hexo-NexT-GithubPage-to-host-a-blog-system/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -552,7 +700,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
@@ -561,7 +709,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">Kategorien</span>
               
             </div>
@@ -570,7 +718,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">Tags</span>
               </a>
             </div>
