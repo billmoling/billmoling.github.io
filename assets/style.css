@@ -1,84 +1,44 @@
-/* General Styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Header Styling */
+/* Styling sections for better readability */
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Styling for navigation to stick at the top */
 header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #004085;
-    color: #ffffff;
-    padding: 15px 20px;
+    z-index: 1000;
+    padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    list-style: none;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    background-color: #0056b3;
-}
-
-/* Main Content Styling */
-main {
-    padding: 40px;
-    background-color: #ffffff;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-h1,
-h2 {
-    color: #004085;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #004085;
-    color: #ffffff;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding: 20px;
-        margin: 10px;
-    }
+    color: #cce5ff;
 }
